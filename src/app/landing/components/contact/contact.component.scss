@@ -1,0 +1,108 @@
+@import "../../../../styles/shared/media-queries";
+
+:host {
+  .contact {
+    padding: 120px 100px;
+    max-width: 1920px;
+    margin: 0 auto;
+    @include lg {
+      padding: 12rem 5rem;
+    }
+    @include mq("950px") {
+      padding: 5rem;
+    }
+    @include sm {
+      padding: 5rem 2rem;
+    }
+    &__header {
+      h2 {
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+        color: var(--secondary-color);
+        padding-bottom: 5rem;
+        @include mq("950px") {
+          padding-bottom: 2rem;
+        }
+      }
+    }
+    &__body {
+      display: flex;
+      @include mq("1000px") {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5rem;
+        @include mq("950px") {
+          gap: 2rem;
+        }
+      }
+    }
+    &__form {
+      width: 50%;
+      @include mq("1000px") {
+        width: 100%;
+        max-width: 600px;
+      }
+      &-items {
+        display: flex;
+        gap: 2rem;
+        @include sm {
+          flex-wrap: wrap;
+        }
+        &:nth-of-type(2) {
+          padding-top: 2rem;
+        }
+      }
+      &-button {
+        padding-top: 2rem;
+        @include mq("950px") {
+          display: flex;
+          justify-content: center;
+        }
+        button {
+          @include sm {
+            width: 100%;
+          }
+        }
+      }
+      &-description {
+        padding-top: 2rem;
+      }
+    }
+    &__left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+      @include mq("1000px") {
+        width: 100%;
+        flex-direction: row;
+        max-width: 600px;
+        justify-content: space-between;
+      }
+      @include sm {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+      }
+      &-item {
+        width: 200px;
+        @include mq("1000px") {
+          width: auto;
+        }
+        h4 {
+          color: var(--secondary-color);
+        }
+        i {
+          padding-right: 1rem;
+        }
+        a:hover i {
+          color: var(--secondary-color);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+mat-progress-bar {
+  border-radius: 8px;
+}
+
+.mdc-linear-progress {
+  height: 10px !important;
+}
+
+.progress-bar {
+  .mdc-linear-progress__buffer-bar {
+    background-color: #fff;
+  }
+  .mdc-linear-progress__bar-inner {
+    border-color: var(--secondary-color);
+    border-top-width: 10px;
+  }
+  .mdc-linear-progress__bar {
+    height: 10px;
+  }
+  .mdc-linear-progress__buffer {
+    height: 10px;
+  }
+}

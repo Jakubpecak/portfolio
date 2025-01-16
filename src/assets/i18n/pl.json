@@ -1,0 +1,177 @@
+{
+  "navigation": {
+    "logo-name": "Kuba",
+    "menu": {
+      "home": "Strona główna",
+      "about": "O mnie",
+      "skills": "Umiejętności",
+      "qualification": "Kwalifikacje",
+      "services": "Usługi",
+      "portfolio": "Portfolio",
+      "contact": "Kontakt"
+    }
+  },
+  "home": {
+    "profession": "Frontend Developer",
+    "greeting": "Cześć, jestem",
+    "description": "Frontend Developer z doświadczeniem w tworzeniu skalowalnych aplikacji internetowych oraz rozwijaniu i modyfikowaniu ich modułów. Nieustannie dążę do doskonalenia swoich umiejętności oraz aktywnie śledzę najnowsze trendy technologiczne. Biegle posługuję się <b>Angular</b>, <b>HTML5</b>, <b>CSS/SCSS</b>, <b>JavaScript/TypeScript</b> oraz <b>Git</b>. Pasjonuję się tworzeniem intuicyjnych i funkcjonalnych aplikacji, które spełniają potrzeby użytkowników i wprowadzają innowacyjne rozwiązania.",
+    "contact": "Skontaktuj się ze mną"
+  },
+  "about": {
+    "title": "O mnie",
+    "subtitle": "Moje wprowadzenie",
+    "description": "<b>Elastyczny</b>, <b>zmotywowany</b>, <b>z pasją</b> tworzący innowacyjne rozwiązania dla klientów. Kluczowe atuty to <b>współpraca</b> i <b>umiejętność rozwiązywania problemów</b>. Zawsze gotowy na nowe projekty i chętny do dalszego rozwoju.",
+    "years": "Lata doświadczenia",
+    "projects": "Zrealizowane projekty",
+    "companies": "Firmy, w których pracowałem",
+    "download": "Pobierz CV"
+  },
+  "skills": {
+    "title": "Umiejętności",
+    "title-2": "Frontend Developer",
+    "title-3": "Kursy i inne",
+    "subtitle": "Mój poziom techniczny",
+    "experience": "doświadczenie z",
+    "list": {
+      "item-1": "Zaawansowany <b>framework po stronie klienta</b> do budowy aplikacji jednostronicowych (SPA) z dynamiczną treścią i bogatymi interfejsami użytkownika. Zaawansowana znajomość <b>Angular 14+</b> z doświadczeniem w tworzeniu komponentów i optymalizacji wydajności.",
+      "item-2": "Podstawowe języki nowoczesnego tworzenia stron internetowych. Biegłość w <b>TypeScript</b> do budowy skalowalnych aplikacji oraz <b>JavaScript</b> do dynamicznych funkcjonalności. Doświadczenie z <b>RxJS</b> i <b>NgRx</b> w programowaniu reaktywnym i zarządzaniu stanem oraz płynna integracja z <b>REST API</b>.",
+      "item-3": "Standardowy język znaczników do strukturyzowania treści internetowych, oferujący <b>elementy semantyczne</b>, <b>integrację multimediów</b> oraz <b>kompatybilność</b> z nowoczesnymi technologiami internetowymi.",
+      "item-4": "Ekspertyza w tworzeniu responsywnych i atrakcyjnych wizualnie układów z wykorzystaniem <b>CSS</b> i <b>SCSS</b>. Znajomość <b>Tailwind CSS</b>, <b>Angular Material</b> oraz <b>metodologii BEM</b> w budowie skalowalnych komponentów UI.",
+      "item-5": "Biegłość w zarządzaniu wersjami kodu za pomocą <b>Git</b> w projektach zespołowych. Doświadczenie z <b>GitHub/GitLab</b> oraz <b>CI/CD pipelines</b> do automatycznego wdrażania i ciągłej integracji.",
+      "item-6": "Umiejętność projektowania interfejsów internetowych, które elastycznie dostosowują się do <b>różnych rozmiarów ekranów</b> i <b>urządzeń</b>, zapewniając optymalne doświadczenia użytkownika na <b>komputerach</b>, <b>tabletach</b> i <b>smartfonach</b>.",
+      "item-7": "Doświadczenie w pracy z branżowymi <b>narzędziami UI/UX</b> do tworzenia intuicyjnych <b>interfejsów użytkownika</b> oraz <b>interaktywnych prototypów</b>, wspierających iteracyjne procesy projektowe."
+    }
+  },
+  "qualification": {
+    "title": "Kwalifikacje",
+    "subtitle": "Moja ścieżka zawodowa",
+    "education": "Edukacja",
+    "work": "Praca",
+    "school": "Liceum w Leżajsku",
+    "profession": "Inżynier środowiska",
+    "student": "Student",
+    "currently": "Obecnie",
+    "university": "Uniwersytet Rzeszowski",
+    "agency": "Agencja Interaktywna Testin",
+    "work-currently": "09/2023 - Obecnie"
+  },
+  "services": {
+    "title": "Usługi",
+    "subtitle": "Co oferuję",
+    "frontend": "Frontend<br>Developer",
+    "design": "UI/UX<br>Designer",
+    "branding": "Branding<br>Designer",
+    "view-more": "Zobacz więcej",
+    "modal": {
+      "frontend": {
+        "title": "Frontend Developer",
+        "text-1": "Tworzę interaktywne i intuicyjne interfejsy użytkownika.",
+        "text-2": "Projektuję responsywne strony internetowe.",
+        "text-3": "Optymalizuję wydajność aplikacji frontendowych.",
+        "text-4": "Integruję frontend z backendem oraz API."
+      },
+      "design": {
+        "title": "UI/UX Designer",
+        "text-1": "Projektuję przyjazne doświadczenia użytkownika.",
+        "text-2": "Tworzę interfejsy zorientowane na potrzeby użytkowników.",
+        "text-3": "Tworzę makiety i prototypy interfejsów.",
+        "text-4": "Usprawniam interakcje poprzez nowoczesne rozwiązania UX."
+      },
+      "brand": {
+        "title": "Branding Designer",
+        "text-1": "Buduję spójną i rozpoznawalną tożsamość marki.",
+        "text-2": "Projektuję spójne wizualizacje dla marki.",
+        "text-3": "Tworzę logo i zasoby marki, które przyciągają uwagę.",
+        "text-4": "Wzmacniam komunikację wizualną marki."
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "second-title": "Nowoczesna Strona Internetowa",
+    "subtitle": "Najnowsze projekty",
+    "description": "Moje strony internetowe oferują szeroki wachlarz zaawansowanych funkcji, które poprawiają komfort użytkowania. Oto niektóre z kluczowych funkcjonalności:",
+    "check": "Sprawdź",
+    "tooltip": "Wkrótce więcej",
+    "content-list": {
+      "title-1": "Dynamiczne Formularze",
+      "description-1": "Formularze, które w czasie rzeczywistym dostosowują się do danych wprowadzanych przez użytkownika dla lepszej wygody.",
+      "title-2": "Zaawansowane Tabele Danych",
+      "description-2": "Tabele z możliwością sortowania, filtrowania i wyszukiwania, które ułatwiają szybkie znajdowanie informacji.",
+      "title-3": "Interaktywne Elementy UI",
+      "description-3": "Pola tekstowe, rozwijane listy i autouzupełnianie. Kompleksowe opcje rezerwacji dla płynnego procesu.",
+      "title-4": "Responsywny Design",
+      "description-4": "Dostosowany do wszystkich rozmiarów ekranów, zapewniający spójne doświadczenie na różnych urządzeniach.",
+      "title-5": "System Logowania i więcej",
+      "description-5": "Kliknij poniżej i sprawdź demo."
+    },
+    "demo": "Zobacz Demo"
+  },
+  "contact": {
+    "title": "Skontaktuj się ze mną",
+    "subtitle": "Pozostańmy w kontakcie",
+    "call": "Zadzwoń do mnie",
+    "email": "Email",
+    "location": "Polska",
+    "accept": "Akceptuję regulamin serwisu.",
+    "send": "Wyślij"
+  },
+  "footer": {
+    "about": "O mnie",
+    "skills": "Umiejętności",
+    "contact": "Kontakt",
+    "rights": "Wszelkie prawa zastrzeżone"
+  },
+  "form": {
+    "name": "Imię",
+    "email": "Email",
+    "phone": "Telefon",
+    "description": "Opis"
+  },
+  "button": {
+    "up": "Do góry",
+    "submit": "Wyślij"
+  },
+  "popup": {
+    "location": "Lokalizacja"
+  },
+  "errors": {
+    "required-name": "Imię jest wymagane.",
+    "required-email": "Email jest wymagany.",
+    "required-phone": "Telefon jest wymagany.",
+    "required-description": "Opis jest wymagany.",
+    "email": "Nieprawidłowy format email.",
+    "min-name": "Imię jest za krótkie.",
+    "min-description": "Minimum 10 znaków.",
+    "max-name": "Imię jest za długie.",
+    "max-email": "Email jest za długi.",
+    "max-phone": "Telefon jest za długi.",
+    "max-description": "Maksymalnie 500 znaków.",
+    "message-failed": "Wystąpił błąd, spróbuj ponownie później.",
+    "message-success": "Wiadomość została wysłana."
+  },
+  "page": {
+    "not-found": "Strona nie została znaleziona"
+  },
+  "validation": {
+    "username-required": "Nazwa użytkownika jest wymagana",
+    "invalid-value": "Nieprawidłowa wartość",
+    "min-length": "Minimalna długość to {{length}} znaków",
+    "max-length": "Maksymalna długość to {{length}} znaków",
+    "password-required": "Hasło jest wymagane",
+    "password-pattern": "Hasło musi zawierać co najmniej jedną wielką literę, jedną cyfrę i jeden znak specjalny",
+    "email-required": "Email jest wymagany",
+    "email-invalid": "Nieprawidłowy adres email",
+    "repeat-password-required": "Powtórzenie hasła jest wymagane",
+    "not-match": "Hasła się nie zgadzają",
+    "name-required": "Imię jest wymagane",
+    "gender-required": "Płeć jest wymagana",
+    "country-required": "Kraj jest wymagany",
+    "date-of-birth-required": "Data urodzenia jest wymagana",
+    "phone-required": "Telefon jest wymagany",
+    "title-required": "Tytuł jest wymagany",
+    "description-required": "Opis jest wymagany",
+    "message-sent": "Wiadomość została wysłana",
+    "complete-fields": "Proszę wypełnić wszystkie pola"
+  }
+}

@@ -1,0 +1,14 @@
+<div class="dialog">
+  <button mat-icon-button aria-label="close dialog" mat-dialog-close>
+    <i class="fas fa-times"></i>
+  </button>
+  <h1 mat-dialog-title>{{ this.title | translate }}</h1>
+  <div mat-dialog-content>
+    <ul class="dialog__list">
+      <li *ngFor="let item of list" class="dialog__list-item">
+        <i class="fas fa-check-circle"></i>
+        <span>{{ item | translate }}</span>
+      </li>
+    </ul>
+  </div>
+</div>

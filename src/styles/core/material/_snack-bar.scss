@@ -1,0 +1,22 @@
+@import "../../shared/media-queries";
+
+.snackbar-warn,
+.snackbar-success {
+  .mat-mdc-snackbar-surface {
+    .mat-mdc-snack-bar-label {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.8rem;
+      color: var(--primary-bgc-color);
+      @include sm {
+        font-size: 1.6rem;
+        text-align: center;
+      }
+    }
+  }
+}
+.snackbar-warn .mat-mdc-snackbar-surface {
+  background-color: var(--error-color) !important;
+}
+.snackbar-success .mat-mdc-snackbar-surface {
+  background-color: var(--success-color) !important;
+}

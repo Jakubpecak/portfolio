@@ -1,0 +1,33 @@
+<div class="qualifications">
+  <div class="qualifications__header">
+    <h2>{{ "qualification.title" | translate }}</h2>
+    <h3>{{ "qualification.subtitle" | translate }}</h3>
+  </div>
+  <div class="qualifications__body">
+    <mat-tab-group>
+      <mat-tab *ngFor="let section of qualifications">
+        <ng-template mat-tab-label>
+          <i [class]="section.icon"></i>
+          <h4>{{ section.label | translate }}</h4>
+        </ng-template>
+        <div [ngClass]="'qualification__road-' + section.type">
+          <mat-vertical-stepper #stepper [disableRipple]="true">
+            <ng-template matStepperIcon="edit">
+              <i class="fas fa-check"></i>
+            </ng-template>
+            <ng-template matStepperIcon="number" let-index="index">
+              {{ index + 1 }}
+            </ng-template>
+            <mat-step
+              *ngFor="let item of section.items"
+              [label]="item.title | translate"
+            >
+              <h5>{{ item.subtitle | translate }}</h5>
+              <p>{{ item.time | translate }}</p>
+            </mat-step>
+          </mat-vertical-stepper>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="portfolio">
+  <div class="portfolio__header">
+    <h2>{{ "portfolio.title" | translate }}</h2>
+    <h3>{{ "portfolio.subtitle" | translate }}</h3>
+  </div>
+  <div class="portfolio__body">
+    <div class="portfolio__wrapper">
+      <div class="portfolio__left">
+        <owl-carousel-o [options]="customOptions">
+          <ng-container *ngFor="let website of websiteList">
+            <ng-template class="slide" carouselSlide [id]="website.id">
+              <img
+                [src]="website.url"
+                [alt]="website.alt"
+                [title]="website.alt"
+              />
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o>
+      </div>
+      <div class="portfolio__right">
+        <div class="portfolio__right-content">
+          <h3>{{ "portfolio.second-title" | translate }}</h3>
+          <p>{{ "portfolio.description" | translate }}</p>
+
+          <ul class="portfolio__list">
+            <li *ngFor="let content of contentList">
+              <span>{{ content.title | translate }}</span> –
+              {{ content.description | translate }}
+            </li>
+          </ul>
+          <div class="portfolio__button-box">
+            <button mat-raised-button color="primary" (click)="openDemoPage()">
+              {{ "portfolio.demo" | translate }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

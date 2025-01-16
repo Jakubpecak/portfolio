@@ -1,0 +1,29 @@
+@import "../../../../styles/shared/mixins";
+@import "../../../../styles/shared/media-queries";
+
+.cursor-trail {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  @include fade__out();
+}
+
+.fa-computer-mouse {
+  position: fixed;
+  top: 15.5rem;
+  right: 2.5rem;
+  font-size: 4rem;
+  color: var(--secondary-color);
+  z-index: 999;
+  @include sm {
+    top: 8rem;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

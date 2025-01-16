@@ -1,0 +1,83 @@
+@import "../../../../styles/shared/media-queries";
+
+:host {
+  .services {
+    padding: 12rem 10rem;
+    max-width: 1920px;
+    margin: 0 auto;
+    @include lg {
+      padding: 12rem 5rem;
+    }
+    @include mq("950px") {
+      padding: 5rem;
+    }
+    @include sm {
+      padding: 5rem 2rem;
+    }
+    &__header {
+      h2 {
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+        color: var(--secondary-color);
+        padding-bottom: 5rem;
+        @include mq("950px") {
+          padding-bottom: 2rem;
+        }
+      }
+    }
+    &__body {
+      display: flex;
+      justify-content: center;
+      gap: 5rem;
+      @include mq("1050px") {
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+    }
+    &__item {
+      border: 3px solid black;
+      border-radius: 1rem;
+      padding: 3rem;
+      height: 300px;
+      width: 300px;
+      justify-content: space-around;
+      flex-direction: column;
+      display: flex;
+      cursor: pointer;
+      background-color: #fff;
+      @include sm {
+        width: 90%;
+        height: 250px;
+      }
+      &:hover {
+        box-shadow: 0px 0px 24px 0px var(--secondary-color);
+        border: 3px solid var(--secondary-color);
+        transition: all 0.3s;
+        & i {
+          color: var(--secondary-color);
+        }
+        & .fa-arrow-right {
+          margin: 0 0.8rem;
+          transition: all 0.5s;
+        }
+      }
+
+      &-title {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      &-icon {
+        font-size: 3rem;
+      }
+
+      &-view-more {
+        i {
+          padding-left: 0.8rem;
+        }
+      }
+    }
+  }
+}

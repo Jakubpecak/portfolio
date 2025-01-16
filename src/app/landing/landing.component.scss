@@ -1,0 +1,27 @@
+@import "../../styles/shared/mixins";
+@import "../../styles/shared/media-queries";
+
+:host {
+  .container {
+    padding: 7.8rem 0 0 0;
+    @include sm {
+      padding: 0;
+    }
+    .fa-gear {
+      position: fixed;
+      top: 9.8rem;
+      right: 2rem;
+      font-size: 4rem;
+      color: var(--secondary-color);
+      z-index: 999;
+      @include rotate__menu(5s);
+      @include sm {
+        top: 2rem;
+      }
+      &:hover {
+        animation-play-state: paused;
+        cursor: pointer;
+      }
+    }
+  }
+}

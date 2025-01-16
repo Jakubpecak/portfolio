@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #3f51b5;
+  --primary-bgc-color: #fff;
+  --secondary-bgc-color: #dfe6e9;
+  --error-color: #dc143c;
+  --success-color: #32cd32;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-color);
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+#profile,
+#skills,
+#services,
+#contact {
+  background-color: var(--secondary-bgc-color);
+}
+
+#about,
+#qualification,
+#portfolio {
+  background-color: var(--primary-bgc-color);
+}
+
+#portfolio {
+  .owl-dots {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .owl-dot.owl-dot-text.active {
+    span {
+      background: var(--secondary-color);
+    }
+  }
+  .owl-prev,
+  .owl-next {
+    background: var(--secondary-color);
+    width: 100px;
+  }
+}
+
+.typed-cursor {
+  display: none;
+}
+
+.lightbox {
+  position: fixed !important;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}

@@ -1,0 +1,27 @@
+@import "../../../../styles/shared/media-queries";
+
+:host {
+  .page-not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12rem 10rem;
+    height: calc(100vh - 190px);
+    gap: 2rem;
+    background-color: var(--secondary-bgc-color);
+    @include lg {
+      padding: 12rem 5rem;
+    }
+    @include mq("950px") {
+      padding: 5rem;
+    }
+    @include sm {
+      padding: 5rem 2rem;
+    }
+    h1 {
+      color: var(--secondary-color);
+      font-style: italic;
+    }
+  }
+}

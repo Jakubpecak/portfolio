@@ -1,0 +1,69 @@
+<main class="container">
+  <header id="profile">
+    <app-profile
+      [isDesktop]="isDesktop"
+      [isTablet]="isTablet"
+      [isMobile]="isMobile"
+    ></app-profile>
+  </header>
+  <section id="about">
+    <app-about-me
+      [isDesktop]="isDesktop"
+      [isTablet]="isTablet"
+      [isMobile]="isMobile"
+    ></app-about-me>
+  </section>
+  <section id="skills">
+    <app-skills
+      [isDesktop]="isDesktop"
+      [isTablet]="isTablet"
+      [isMobile]="isMobile"
+    ></app-skills>
+  </section>
+  <section id="qualification">
+    <app-qualifications
+      [isDesktop]="isDesktop"
+      [isTablet]="isTablet"
+      [isMobile]="isMobile"
+    ></app-qualifications>
+  </section>
+  <section id="services">
+    <app-services
+      [isDesktop]="isDesktop"
+      [isTablet]="isTablet"
+      [isMobile]="isMobile"
+    ></app-services>
+  </section>
+  <section id="portfolio">
+    <app-portfolio
+      [isDesktop]="isDesktop"
+      [isTablet]="isTablet"
+      [isMobile]="isMobile"
+    ></app-portfolio>
+  </section>
+  <section id="contact">
+    <app-contact
+      [isDesktop]="isDesktop"
+      [isTablet]="isTablet"
+      [isMobile]="isMobile"
+    ></app-contact>
+  </section>
+  <i
+    class="fa-solid fa-gear"
+    [matMenuTriggerFor]="menu"
+    role="button"
+    aria-label="Open palette panel"
+  ></i>
+  <mat-menu #menu="matMenu">
+    <div class="colors">
+      <span
+        class="colors--item"
+        mat-menu-item
+        (click)="changeTheme(item.color)"
+        *ngFor="let item of colorPalette"
+        [ngStyle]="{ 'background-color': item.color }"
+      >
+      </span>
+    </div>
+  </mat-menu>
+</main>

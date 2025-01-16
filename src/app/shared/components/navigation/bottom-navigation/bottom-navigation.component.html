@@ -1,0 +1,19 @@
+<div id="nav" [ngClass]="isAtBottom ? 'hidden' : 'visible'">
+  <div class="nav">
+    <div class="nav__logo" routerLink="/">
+      {{ "navigation.logo-name" | translate }}
+    </div>
+    <div class="nav__flags">
+      <img
+        [src]="language.src"
+        [alt]="language.name"
+        (click)="changeLanguage(language.name)"
+        *ngFor="let language of languageList"
+        [ngStyle]="{
+          opacity: this.currentLanguage === language.name ? 1 : 0.5
+        }"
+      />
+    </div>
+    <h3 (click)="openBottomSheet()">Menu</h3>
+  </div>
+</div>

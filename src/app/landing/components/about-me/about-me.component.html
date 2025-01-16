@@ -1,0 +1,31 @@
+<div class="about">
+  <div class="about__header">
+    <h2>{{ "about.title" | translate }}</h2>
+    <h3>{{ "about.subtitle" | translate }}</h3>
+  </div>
+  <div class="about__body">
+    <div class="about__picture">
+      <img src="/assets/imgs/Angular-18.webp" alt="profile picture" />
+    </div>
+    <div class="about__content">
+      <p [innerHTML]="'about.description' | translate"></p>
+      <div class="about__details">
+        <div class="about__detail-item" *ngFor="let option of countOptions">
+          <p
+            class="about__detail-number"
+            [countUp]="option.count"
+            [options]="countUpOptions"
+          >
+            0
+          </p>
+          <p><strong [innerHTML]="option.name | translate"></strong></p>
+        </div>
+      </div>
+      <div class="about__cv">
+        <button mat-raised-button color="primary" (click)="downloadCV()">
+          {{ "about.download" | translate }} <i class="fas fa-download"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

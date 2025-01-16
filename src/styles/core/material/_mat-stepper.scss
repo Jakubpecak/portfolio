@@ -1,0 +1,46 @@
+@import "../../shared/media-queries";
+
+#qualification {
+  mat-tab-body {
+    padding-top: 2rem;
+  }
+  .mat-stepper-vertical,
+  .mat-stepper-horizontal {
+    background: #fff;
+  }
+  .mat-mdc-tab-body-content {
+    overflow: hidden;
+  }
+  .mat-step-text-label {
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-family: "Poppins", sans-serif;
+    @include sm {
+      font-size: 1.8rem;
+    }
+  }
+  .mat-step-icon {
+    background-color: var(--secondary-color);
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    margin-right: 2.5rem;
+    @include sm {
+      width: 30px;
+      height: 30px;
+    }
+    .mat-step-icon-content {
+      font-size: 1.5rem;
+    }
+  }
+  .mat-vertical-content-container {
+    margin-left: 4.1rem;
+    .mat-vertical-content {
+      padding: 0 5rem 2rem 5rem;
+      h5,
+      p {
+        font-family: "Poppins", sans-serif;
+      }
+    }
+  }
+}

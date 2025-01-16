@@ -1,0 +1,11 @@
+<mat-form-field class="input" appearance="outline" hideRequiredMarker>
+  <mat-label>{{ label | translate }}</mat-label>
+  <ng-container>
+    <input
+      matInput
+      [formControl]="control"
+      [type]="type"
+      [placeholder]="placeholder | translate"
+    />
+  </ng-container>
+</mat-form-field>

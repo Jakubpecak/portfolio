@@ -1,0 +1,72 @@
+<div class="contact">
+  <div class="contact__header">
+    <h2>{{ "contact.title" | translate }}</h2>
+    <h3>{{ "contact.subtitle" | translate }}</h3>
+  </div>
+  <div class="contact__body">
+    <div class="contact__left">
+      <div class="contact__left-item" *ngFor="let item of contactItems">
+        <h4>{{ item.name | translate }}</h4>
+        <a [href]="item.link" *ngIf="item.text !== 'Rzeszów'"
+          ><i [class]="item.icon"></i>{{ item.text }}</a
+        >
+        <a [href]="item.link" target="_blank" *ngIf="item.text === 'Rzeszów'"
+          ><i [class]="item.icon"></i>{{ item.text }}</a
+        >
+      </div>
+    </div>
+    <div class="contact__form">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="contact__form-items">
+          <app-error controlName="firstName">
+            <app-input
+              [label]="'Name'"
+              [control]="form.get('firstName')"
+              [type]="'text'"
+            >
+            </app-input>
+          </app-error>
+          <app-error controlName="lastName">
+            <app-input
+              [label]="'Last name'"
+              [control]="form.get('lastName')"
+              [type]="'text'"
+            >
+            </app-input>
+          </app-error>
+        </div>
+        <div class="contact__form-items">
+          <app-error controlName="email">
+            <app-input
+              [label]="'Email'"
+              [control]="form.get('email')"
+              [type]="'text'"
+            >
+            </app-input>
+          </app-error>
+          <app-error controlName="phone">
+            <app-input
+              [label]="'Phone number'"
+              [control]="form.get('phone')"
+              [type]="'number'"
+            >
+            </app-input>
+          </app-error>
+        </div>
+        <div class="contact__form-description">
+          <app-error controlName="description" class="">
+            <app-textarea
+              [label]="'Description'"
+              [control]="this.form.get('description')"
+            ></app-textarea>
+          </app-error>
+        </div>
+        <div class="contact__form-button">
+          <button type="submit" mat-raised-button color="primary">
+            {{ "button.submit" | translate }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

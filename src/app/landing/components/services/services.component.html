@@ -1,0 +1,22 @@
+<div class="services">
+  <div class="services__header">
+    <h2>{{ "services.title" | translate }}</h2>
+    <h3>{{ "services.subtitle" | translate }}</h3>
+  </div>
+  <div class="services__body">
+    <div
+      *ngFor="let detail of serviceDialogDetails"
+      class="services__item"
+      (click)="openDialog(detail.modalTitle, detail.list)"
+    >
+      <div class="services__item-icon"><i [class]="detail.icon"></i></div>
+      <h4
+        class="services__item-title"
+        [innerHTML]="detail.title | translate"
+      ></h4>
+      <p class="services__item-view-more">
+        {{ "services.view-more" | translate }}<i class="fas fa-arrow-right"></i>
+      </p>
+    </div>
+  </div>
+</div>

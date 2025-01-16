@@ -1,0 +1,123 @@
+@import "../../../../styles/shared/media-queries";
+
+:host {
+  .portfolio {
+    padding: 12rem 10rem;
+    max-width: 1920px;
+    margin: 0 auto;
+    @include lg {
+      padding: 12rem 5rem;
+    }
+    @include mq("950px") {
+      padding: 5rem;
+    }
+    @include sm {
+      padding: 5rem 2rem;
+    }
+    &__header {
+      h2 {
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+        color: var(--secondary-color);
+        padding-bottom: 5rem;
+        @include mq("950px") {
+          padding-bottom: 2rem;
+        }
+      }
+    }
+    &__body {
+      display: flex;
+    }
+    &__wrapper {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      gap: 5rem;
+      @include mq("1050px") {
+        flex-wrap: wrap;
+      }
+      @include mq("950px") {
+        gap: 2rem;
+      }
+    }
+    &__left {
+      width: 50%;
+      @include mq("1050px") {
+        width: 100%;
+      }
+      owl-carousel-o {
+        display: block;
+        height: 400px;
+        max-width: 600px;
+        margin: auto;
+        @include sm {
+          height: 300px;
+        }
+      }
+
+      .owl-item {
+        height: 400px;
+        max-width: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      img {
+        width: 100%;
+        max-width: 600px;
+        height: 400px;
+        border-radius: 1rem;
+        object-fit: cover;
+        object-position: center;
+        @include mq("1050px") {
+          height: 350px;
+        }
+        @include sm {
+          height: 250px;
+        }
+      }
+    }
+    &__right {
+      width: 50%;
+      @include mq("1050px") {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      &-content {
+        max-width: 750px;
+        justify-content: center;
+        gap: 3rem;
+        @include mq("1050px") {
+          max-width: 600px;
+        }
+        h3,
+        p {
+          padding-bottom: 2rem;
+        }
+      }
+    }
+    &__button-box {
+      @include mq("950px") {
+        display: flex;
+        justify-content: center;
+      }
+      a,
+      button {
+        @include sm {
+          width: 100%;
+        }
+      }
+    }
+    ul {
+      list-style: circle;
+      padding-left: 3rem;
+      padding-bottom: 2rem;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

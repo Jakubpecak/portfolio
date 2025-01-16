@@ -1,0 +1,177 @@
+{
+  "navigation": {
+    "logo-name": "Kuba",
+    "menu": {
+      "home": "Home",
+      "about": "About me",
+      "skills": "Skills",
+      "qualification": "Qualification",
+      "services": "Services",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    }
+  },
+  "home": {
+    "profession": "Frontend developer",
+    "greeting": "Hi, I'm",
+    "description": "Frontend Developer with experience in creating scalable web applications as well as extending and modifying their modules.<br>I am constantly striving to improve my skills and actively follow the latest technological trends. I am proficient in <b>Angular</b>, <b>HTML5</b>, <b>CSS/SCSS</b>, <b>JavaScript/TypeScript</b> and <b>Git</b>. I am passionate about developing intuitive and functional applications that meet user needs and introduce innovative solutions.",
+    "contact": "Contact me"
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "My introduction",
+    "description": "<b>Flexible</b>, <b>motivated</b>, and <b>passionate</b> about creating innovative solutions for clients. Key strengths include <b>cooperation</b> and <b>problem-solving abilities</b>. Always ready to take on new projects and eager to develop them further.",
+    "years": "Years experience",
+    "projects": "Completed projects",
+    "companies": "Companies worked",
+    "download": "Download CV"
+  },
+  "skills": {
+    "title": "Skills",
+    "title-2": "Frontend developer",
+    "title-3": "Courses and others",
+    "subtitle": "My technical level",
+    "experience": "experience with",
+    "list": {
+      "item-1": "A powerful <b>client-side framework</b> for building single-page applications (SPA) with dynamic content and rich user interfaces. Advanced knowledge of <b>Angular 14+</b> with experience in component-driven development and performance optimization.",
+      "item-2": "Core languages for modern web development. Proficient in <b>TypeScript</b> for scalable applications and <b>JavaScript</b> for dynamic behavior. Experienced with <b>RxJS</b> and <b>NgRx</b> for reactive programming and state management, as well as seamless integration with <b>REST APIs</b> for frontend-backend communication.",
+      "item-3": "The standard markup language for structuring web content, offering <b>semantic elements</b>, <b>multimedia integration</b> and <b>compatibility</b> with modern web technologies.",
+      "item-4": "Expertise in creating responsive and visually appealing layouts using <b>CSS</b> and <b>SCSS</b>. Skilled in leveraging <b>Tailwind CSS</b>, <b>Angular Material</b> and the <b>BEM methodology</b> to build maintainable and scalable UI components.",
+      "item-5": "Proficient in version control using <b>Git</b> for collaborative development and efficient code management. Hands-on experience with <b>GitHub/GitLab</b> and <b>CI/CD pipelines</b> for automated deployment and continuous integration.",
+      "item-6": "Expertise in designing web interfaces that adapt fluidly to <b>various screen sizes</b> and <b>devices</b>, ensuring optimal user experience across <b>desktops</b> <b>tablets</b>, and <b>smartphones</b>.",
+      "item-7": "Experience with industry-standard <b>UI/UX design tools</b> for creating intuitive <b>user interfaces</b> and <b>interactive prototypes</b>, supporting collaborative and iterative design workflows."
+    }
+  },
+  "qualification": {
+    "title": "Qualification",
+    "subtitle": "My personal journey",
+    "education": "Education",
+    "work": "Work",
+    "school": "High school in Leżajsk",
+    "profession": "Environmental engineer",
+    "student": "Student",
+    "currently": "Currently",
+    "university": "University of Rzeszow",
+    "agency": "Testin Interactive Agency",
+    "work-currently": "09/2023 - Currently"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What i offer",
+    "frontend": "Frontend<br>Developer",
+    "design": "Ui/Ux<br>Designer",
+    "branding": "Branding<br>Designer",
+    "view-more": "View More",
+    "modal": {
+      "frontend": {
+        "title": "Frontend Developer",
+        "text-1": "Building Interactive User Interfaces.",
+        "text-2": "Responsive Web Design.",
+        "text-3": "Optimizing Performance.",
+        "text-4": "Integrating APIs & Backend."
+      },
+      "design": {
+        "title": "Ui/Ux Designer",
+        "text-1": "Crafting User Experiences.",
+        "text-2": "User-Centric Interface Design.",
+        "text-3": "Wireframing & Prototyping.",
+        "text-4": "Improving Interactions."
+      },
+      "brand": {
+        "title": "Branding Designer",
+        "text-1": "Establishing Brand Identity.",
+        "text-2": "Designing Consistent Visuals.",
+        "text-3": "Creating Logo & Brand Assets.",
+        "text-4": "Enhancing Brand Communication."
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "second-title": "Modern Website",
+    "subtitle": "Most recent work",
+    "description": "My websites offer a wide range of advanced features to enhance the user experience. Here are some of the key functionalities:",
+    "check": "Check",
+    "tooltip": "To be continued",
+    "content-list": {
+      "title-1": "Dynamically Reactive Forms",
+      "description-1": "Forms that adapt in real-time to user inputs for a smoother experience.",
+      "title-2": "Advanced Data Tables",
+      "description-2": "Tables with sorting, filtering, and search capabilities to help users find information quickly.",
+      "title-3": "Interactive UI Elements",
+      "description-3": "Text inputs, select dropdowns, and autocomplete fields. Comprehensive booking options for seamless reservations.",
+      "title-4": "Responsive Design",
+      "description-4": "Optimized for all screen sizes to provide a consistent experience across devices.",
+      "title-5": "Login System And more",
+      "description-5": "Click below and check demo."
+    },
+    "demo": "Live Demo"
+  },
+  "contact": {
+    "title": "Contact me",
+    "subtitle": "Get in touch",
+    "call": "Call me",
+    "email": "Email",
+    "location": "Poland",
+    "accept": "I accept the terms and conditions of the site.",
+    "send": "Send"
+  },
+  "footer": {
+    "about": "About me",
+    "skills": "Skills",
+    "contact": "Contact",
+    "rights": "All right reserved"
+  },
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "description": "Description"
+  },
+  "button": {
+    "up": "Up",
+    "submit": "Submit"
+  },
+  "popup": {
+    "location": "Location"
+  },
+  "errors": {
+    "required-name": "Name is required.",
+    "required-email": "Email is required.",
+    "required-phone": "Phone is required.",
+    "required-description": "Description is required.",
+    "email": "Invalid email format.",
+    "min-name": "Name is too short.",
+    "min-description": "Min. 10 characters.",
+    "max-name": "Name too long.",
+    "max-email": "Email too long.",
+    "max-phone": "Phone is too long.",
+    "max-description": "Max. 500 characters.",
+    "message-failed": "Error occurred, please try again later.",
+    "message-success": "Message was sent."
+  },
+  "page": {
+    "not-found": "Page not found"
+  },
+  "validation": {
+    "username-required": "Username is required",
+    "invalid-value": "Invalid value",
+    "min-length": "Minimum length is {{length}} characters",
+    "max-length": "Maximum length is {{length}} characters",
+    "password-required": "Password is required",
+    "password-pattern": "Password must contain at least one uppercase letter, one digit, and one special character",
+    "email-required": "Email is required",
+    "email-invalid": "Email address is invalid",
+    "repeat-password-required": "Repeat password is required",
+    "not-match": "Password not match",
+    "name-required": "Name is required",
+    "gender-required": "Gender is required",
+    "country-required": "Country is required",
+    "date-of-birth-required": "Date of birth is required",
+    "phone-required": "Phone is required",
+    "title-required": "Title is required",
+    "description-required": "Description is required",
+    "message-sent": "Message has been sent",
+    "complete-fields": "Please complete all fields"
+  }
+}

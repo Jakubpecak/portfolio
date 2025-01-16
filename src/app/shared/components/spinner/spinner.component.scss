@@ -1,0 +1,72 @@
+$loader-colors: #3f51b5, #dc143c, #00bfff, #32cd32, #daa520, #708090, #9932cc,
+  #008080;
+
+.spinner-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+  #loader {
+    bottom: 0;
+    height: 175px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 175px;
+    .dot {
+      bottom: 0;
+      height: 100%;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 87.5px;
+      &::before {
+        border-radius: 100%;
+        content: "";
+        height: 87.5px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: scale(0);
+        width: 87.5px;
+      }
+      @for $i from 1 through 8 {
+        &:nth-child(7n + #{$i}) {
+          transform: rotate(#{45 * $i}deg);
+          &::before {
+            animation: 0.8s linear #{0.1s * $i} infinite load;
+            background: nth($loader-colors, $i);
+          }
+        }
+      }
+    }
+    .loading {
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      bottom: -40px;
+      height: 20px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      width: 180px;
+    }
+  }
+}
+
+@keyframes load {
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../shared/media-queries";
+
+#nav .mat-mdc-tab-link-container {
+  border-bottom-width: 0;
+  border-bottom-style: none;
+  .mat-mdc-tab-link {
+    .mdc-tab__text-label {
+      color: var(--primary-color);
+      font-size: 1.8rem;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      @include mq("1000px") {
+        font-size: 1.6rem;
+      }
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+  }
+  .mdc-tab {
+    @include mq("1015px") {
+      padding: 0 10px;
+    }
+    @include mq("850px") {
+      padding: 0 3px;
+    }
+  }
+  .mdc-tab--active {
+    .mdc-tab__text-label {
+      color: var(--secondary-color);
+    }
+  }
+
+  .mat-mdc-tab-link .mdc-tab-indicator__content--underline {
+    border-color: var(--secondary-color);
+    border-top-width: 5px;
+    border-radius: 8px;
+  }
+}

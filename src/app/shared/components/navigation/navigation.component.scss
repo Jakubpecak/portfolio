@@ -1,0 +1,48 @@
+@import "../../../../styles/shared/media-queries";
+
+:host {
+  #nav {
+    padding: 1.5rem 5rem;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 24px var(--secondary-color);
+    width: 100%;
+    position: fixed;
+    background-color: var(--primary-bgc-color);
+    z-index: 100;
+    @include lg {
+      padding: 1.5rem 2rem;
+    }
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo {
+      font-size: 3rem;
+      font-weight: 700;
+      cursor: pointer;
+      color: var(--secondary-color);
+      @include mq("1000px") {
+        font-size: 2.5rem;
+      }
+    }
+    &__flags {
+      display: flex;
+      gap: 2rem;
+      @include mq("1000px") {
+        gap: 1rem;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid lightgray;
+        cursor: pointer;
+        @include mq("1000px") {
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+  }
+}

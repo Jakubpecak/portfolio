@@ -1,0 +1,103 @@
+@import "../../../../styles/shared/media-queries";
+
+:host {
+  .about {
+    padding: 12rem 10rem;
+    max-width: 1920px;
+    margin: 0 auto;
+    @include lg {
+      padding: 12rem 5rem;
+    }
+    @include mq("950px") {
+      padding: 5rem;
+    }
+    @include sm {
+      padding: 5rem 2rem;
+    }
+    &__header {
+      h2 {
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+        color: var(--secondary-color);
+        padding-bottom: 5rem;
+        @include mq("950px") {
+          padding-bottom: 2rem;
+        }
+      }
+    }
+    &__body {
+      display: flex;
+      @include mq("1000px") {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+    &__picture {
+      width: 50%;
+      @include mq("1000px") {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+        max-height: 400px;
+      }
+    }
+    &__content {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 750px;
+      @include mq("1000px") {
+        width: 100%;
+        max-width: 600px;
+      }
+      p {
+        text-align: center;
+        padding-bottom: 2rem;
+      }
+    }
+    &__details {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      @include sm {
+        gap: 1rem;
+      }
+    }
+    &__detail-item {
+      width: 210px;
+      & .about__detail-number {
+        font-size: 4.5rem;
+        font-weight: bold;
+        color: var(--secondary-color);
+        @include sm {
+          font-size: 3.5rem;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+    &__cv {
+      display: flex;
+      justify-content: center;
+      button {
+        @include sm {
+          width: 100%;
+        }
+        &:hover {
+          i {
+            transform: rotate(0deg);
+            transition: 0.3s all;
+          }
+        }
+        i {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+  }
+}

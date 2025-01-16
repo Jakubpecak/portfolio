@@ -1,0 +1,11 @@
+<mat-nav-list id="bottom-nav">
+  <a
+    [href]="item.link"
+    mat-list-item
+    (click)="openLink()"
+    *ngFor="let item of menu"
+  >
+    <i [class]="item.icon"></i>
+    <span>{{ item.name | translate }}</span>
+  </a>
+</mat-nav-list>

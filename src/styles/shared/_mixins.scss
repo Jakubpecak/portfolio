@@ -1,0 +1,73 @@
+@mixin fade__in($duration: 1s) {
+  animation: fadein $duration ease-in;
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin float__before($duration: 6s) {
+  animation: floatBefore $duration ease-in-out infinite alternate;
+  @keyframes floatBefore {
+    0% {
+      border-radius: 65% 35% 29% 71% / 55% 30% 70% 45%;
+    }
+    50% {
+      border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
+    }
+    100% {
+      border-radius: 65% 35% 29% 71% / 55% 30% 70% 45%;
+    }
+  }
+}
+
+@mixin float__after($duration: 6s) {
+  animation: floatAfter $duration ease-in-out infinite alternate;
+  @keyframes floatAfter {
+    0% {
+      border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
+    }
+    50% {
+      border-radius: 65% 35% 29% 71% / 55% 30% 70% 45%;
+    }
+    100% {
+      border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
+    }
+  }
+}
+
+@mixin rotate__menu($time) {
+  animation: rotateMenu $time infinite linear;
+  @keyframes rotateMenu {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@mixin fade__out() {
+  animation: fadeOut 0.5s ease-out forwards;
+  @keyframes fadeOut {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0;
+    }
+  }
+}

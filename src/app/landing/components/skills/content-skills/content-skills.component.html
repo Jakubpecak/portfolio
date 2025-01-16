@@ -1,0 +1,19 @@
+<div class="content" id="skills-content">
+  <div class="content__body">
+    <div class="content__header">
+      <h3>{{ skillList[selected].label }}</h3>
+    </div>
+    <div class="content__description">
+      <p [innerHTML]="skillList[selected].description | translate"></p>
+    </div>
+    <div class="content__percent">
+      <p>
+        <strong>{{ skillList[selected].percent }}%</strong>
+      </p>
+      <app-progress-bar
+        [mode]="'determinate'"
+        [value]="skillList[selected].percent"
+      ></app-progress-bar>
+    </div>
+  </div>
+</div>

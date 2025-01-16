@@ -1,0 +1,25 @@
+#profile .mat-mdc-raised-button:not(:disabled),
+#about .mat-mdc-raised-button:not(:disabled),
+#contact .mat-mdc-raised-button:not(:disabled),
+#portfolio .mat-mdc-raised-button:not(:disabled),
+.page-not-found .mat-mdc-raised-button:not(:disabled) {
+  background-color: var(--secondary-color);
+  .mdc-button__label {
+    font-size: 1.8rem;
+    color: var(--primary-bgc-color);
+    a {
+      color: var(--primary-bgc-color);
+      font-size: 1.8rem;
+    }
+  }
+}
+
+#contact .mat-mdc-raised-button[disabled],
+.mat-mdc-raised-button.mat-mdc-button-disabled {
+  background-color: var(--secondary-color) !important;
+  opacity: 0.5;
+  .mdc-button__label {
+    font-size: 1.8rem;
+    color: var(--primary-bgc-color);
+  }
+}

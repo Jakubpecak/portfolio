@@ -1,0 +1,31 @@
+<div id="nav">
+  <div class="nav">
+    <div class="nav__logo" routerLink="/" (click)="activeLink = ''">
+      {{ "navigation.logo-name" | translate }}
+    </div>
+    <nav mat-tab-nav-bar [tabPanel]="tabPanel">
+      @for (item of menuList; track item.name) {
+      <a
+        mat-tab-link
+        [href]="item.link"
+        (click)="activeLink = item.name"
+        [active]="activeLink === item.name"
+      >
+        {{ item.name | translate }}
+      </a>
+      }
+    </nav>
+    <div class="nav__flags">
+      <img
+        [src]="language.src"
+        [alt]="language.name"
+        (click)="changeLanguage(language.name)"
+        *ngFor="let language of languageList"
+        [ngStyle]="{
+          opacity: this.currentLanguage === language.name ? 1 : 0.5
+        }"
+      />
+    </div>
+    <mat-tab-nav-panel #tabPanel [style]="'display: none'"></mat-tab-nav-panel>
+  </div>
+</div>

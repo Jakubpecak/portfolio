@@ -1,0 +1,36 @@
+<div class="profile">
+  <div class="profile__socials">
+    <a
+      [href]="social.link"
+      target="_blank"
+      *ngFor="let social of socials"
+      [attr.aria-label]="social.name"
+      ><i [class]="social.icon"></i
+    ></a>
+  </div>
+  <div class="profile__header">
+    <h1>{{ "home.greeting" | translate }} <span>Kuba</span></h1>
+    <h2 #typedElement></h2>
+    <p [innerHTML]="'home.description' | translate"></p>
+    <button
+      mat-raised-button
+      color="primary"
+      [routerLink]="['/']"
+      fragment="contact"
+    >
+      {{ "home.contact" | translate }} <i class="far fa-hand-point-right"></i>
+    </button>
+  </div>
+  <div class="profile__picture">
+    <ng-container *ngFor="let image of images; let i = index">
+      <img
+        [ngSrc]="image"
+        alt="profile picture"
+        width="350"
+        height="350"
+        (click)="openImage(i)"
+        priority
+      />
+    </ng-container>
+  </div>
+</div>

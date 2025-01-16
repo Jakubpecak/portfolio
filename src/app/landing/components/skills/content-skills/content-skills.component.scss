@@ -1,0 +1,36 @@
+@import "../../../../../styles/shared/media-queries";
+
+:host {
+  .content {
+    max-width: 750px;
+    @include mq("950px") {
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    &__header {
+      padding-bottom: 2rem;
+      @include sm {
+        padding-top: 3rem;
+      }
+      h3 {
+        text-align: center;
+      }
+    }
+    &__body {
+      max-width: 600px;
+    }
+    &__description {
+      padding-bottom: 2rem;
+      text-align: center;
+    }
+    &__percent {
+      width: 70%;
+      display: block;
+      margin: 0 auto;
+      p {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}

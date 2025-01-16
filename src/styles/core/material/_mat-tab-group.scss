@@ -1,0 +1,17 @@
+#qualification {
+  .mdc-tab__text-label {
+    color: var(--primary-color);
+  }
+  .mat-mdc-tab-label-container {
+    border-bottom-width: 0;
+  }
+  .mat-mdc-tab.mdc-tab--active:focus .mdc-tab-indicator__content--underline,
+  .mat-mdc-tab .mdc-tab-indicator__content--underline {
+    border-color: var(--secondary-color);
+  }
+  .mdc-tab--active {
+    .mdc-tab__text-label {
+      color: var(--secondary-color);
+    }
+  }
+}
