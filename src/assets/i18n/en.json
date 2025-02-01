@@ -124,6 +124,7 @@
   },
   "form": {
     "name": "Name",
+    "last-name": "Last name",
     "email": "Email",
     "phone": "Phone",
     "description": "Description"
@@ -165,6 +166,7 @@
     "repeat-password-required": "Repeat password is required",
     "not-match": "Password not match",
     "name-required": "Name is required",
+    "last-name-required": "Last Name is required",
     "gender-required": "Gender is required",
     "country-required": "Country is required",
     "date-of-birth-required": "Date of birth is required",

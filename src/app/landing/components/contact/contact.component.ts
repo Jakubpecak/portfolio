@@ -26,22 +26,22 @@ export class ContactComponent implements OnInit {
   contactItems: ContactItem[] = contactItems;
   formItems: FormItem[] = [
     {
-      label: 'Name',
+      label: 'form.name',
       controlName: 'firstName',
       type: 'text'
     },
     {
-      label: 'Last name',
+      label: 'form.last-name',
       controlName: 'lastName',
       type: 'text'
     },
     {
-      label: 'Email',
+      label: 'form.email',
       controlName: 'email',
       type: 'text'
     },
     {
-      label: 'Phone number',
+      label: 'form.phone',
       controlName: 'phone',
       type: 'number'
     }
@@ -70,7 +70,7 @@ export class ContactComponent implements OnInit {
       lastName: [
         '',
         [
-          required('validation.name-required'),
+          required('validation.last-name-required'),
           minLength(3, 'validation.min-length'),
           maxLength(20, 'validation.max-length'),
         ],

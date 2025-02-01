@@ -124,6 +124,7 @@
   },
   "form": {
     "name": "Imię",
+    "last-name": "Nazwisko",
     "email": "Email",
     "phone": "Telefon",
     "description": "Opis"
@@ -165,6 +166,7 @@
     "repeat-password-required": "Powtórzenie hasła jest wymagane",
     "not-match": "Hasła się nie zgadzają",
     "name-required": "Imię jest wymagane",
+    "last-name-required": "Nazwisko jest wymagane",
     "gender-required": "Płeć jest wymagana",
     "country-required": "Kraj jest wymagany",
     "date-of-birth-required": "Data urodzenia jest wymagana",
