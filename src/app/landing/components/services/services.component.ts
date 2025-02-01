@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ServiceDetail } from '../../../core/models/service-detail';
 import {
@@ -20,9 +20,6 @@ export class ServicesComponent {
   designList: string[] = designList;
   brandList: string[] = brandList;
   serviceDialogDetails: ServiceDetail[] = serviceDialogDetails;
-  @Input() isDesktop!: boolean;
-  @Input() isTablet!: boolean;
-  @Input() isMobile!: boolean;
 
   constructor(public dialog: MatDialog) {}
 

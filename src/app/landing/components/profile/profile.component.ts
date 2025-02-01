@@ -5,7 +5,6 @@ import {
   Component,
   ElementRef,
   Inject,
-  Input,
   NgZone,
   OnInit,
   PLATFORM_ID,
@@ -26,9 +25,6 @@ export class ProfileComponent implements OnInit, AfterViewInit {
   images: string[] = ['assets/imgs/my_picture.webp'];
   lightboxImages: any[] = [];
   socials: Social[] = socials;
-  @Input() isDesktop!: boolean;
-  @Input() isTablet!: boolean;
-  @Input() isMobile!: boolean;
   @ViewChild('typedElement', { static: true }) typedElement!: ElementRef;
 
   constructor(

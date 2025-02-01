@@ -2,31 +2,6 @@
 
 :host {
   .services {
-    padding: 12rem 10rem;
-    max-width: 1920px;
-    margin: 0 auto;
-    @include lg {
-      padding: 12rem 5rem;
-    }
-    @include mq("950px") {
-      padding: 5rem;
-    }
-    @include sm {
-      padding: 5rem 2rem;
-    }
-    &__header {
-      h2 {
-        text-align: center;
-      }
-      h3 {
-        text-align: center;
-        color: var(--secondary-color);
-        padding-bottom: 5rem;
-        @include mq("950px") {
-          padding-bottom: 2rem;
-        }
-      }
-    }
     &__body {
       display: flex;
       justify-content: center;

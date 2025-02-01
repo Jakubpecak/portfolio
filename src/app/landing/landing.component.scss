@@ -2,7 +2,7 @@
 @import "../../styles/shared/media-queries";
 
 :host {
-  .container {
+  .main-container {
     padding: 7.8rem 0 0 0;
     @include sm {
       padding: 0;

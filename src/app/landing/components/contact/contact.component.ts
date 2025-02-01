@@ -1,7 +1,6 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  Input,
   OnInit,
 } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
@@ -12,6 +11,9 @@ import { email } from '../../../core/validators/email';
 import { maxLength } from '../../../core/validators/max';
 import { minLength } from '../../../core/validators/min';
 import { required } from '../../../core/validators/required';
+import { FormItem } from '../../../core/models/form-item';
+import { ContactService } from '../../../core/services/contact.service';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -22,13 +24,33 @@ import { required } from '../../../core/validators/required';
 export class ContactComponent implements OnInit {
   form!: FormGroup;
   contactItems: ContactItem[] = contactItems;
-  @Input() isDesktop!: boolean;
-  @Input() isTablet!: boolean;
-  @Input() isMobile!: boolean;
+  formItems: FormItem[] = [
+    {
+      label: 'Name',
+      controlName: 'firstName',
+      type: 'text'
+    },
+    {
+      label: 'Last name',
+      controlName: 'lastName',
+      type: 'text'
+    },
+    {
+      label: 'Email',
+      controlName: 'email',
+      type: 'text'
+    },
+    {
+      label: 'Phone number',
+      controlName: 'phone',
+      type: 'number'
+    }
+  ];
 
   constructor(
     private fb: FormBuilder,
-    private snackbarService: SnackbarService
+    private snackbarService: SnackbarService,
+    private contactService: ContactService 
   ) {}
 
   ngOnInit(): void {
@@ -88,8 +110,12 @@ export class ContactComponent implements OnInit {
 
   onSubmit() {
     if (this.form.valid) {
-      this.snackbarService.open('validation.message-sent', 'success');
-      this.form.reset();
+      this.contactService.sendMessage(this.form.getRawValue()).subscribe(() => {
+        this.snackbarService.open('validation.message-sent', 'success');
+        this.form.reset();
+      }, () => {
+        this.snackbarService.open('errors.message-failed', 'warn');
+      });
     } else {
       this.snackbarService.open('validation.complete-fields', 'warn');
       this.markAllFieldsAsDirty(this.form);

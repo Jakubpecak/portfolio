@@ -1,3 +1,5 @@
+@import "../shared/media-queries";
+
 :root {
   --primary-color: #000;
   --secondary-color: #3f51b5;
@@ -82,4 +84,32 @@ textarea {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.container  {
+  padding: 12rem 10rem;
+  max-width: 1920px;
+  margin: 0 auto;
+  @include lg {
+    padding: 12rem 5rem;
+  }
+  @include mq("950px") {
+    padding: 5rem;
+  }
+  @include sm {
+    padding: 5rem 2rem;
+  }
+}
+
+.title {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--secondary-color);
+  padding-bottom: 5rem;
+  @include mq("950px") {
+    padding-bottom: 2rem;
+  }
 }

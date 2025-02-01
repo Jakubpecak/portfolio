@@ -16,7 +16,7 @@ import { SkillMenuItem } from '../../../../core/models/skill-menu-item';
 export class MenuSkillsComponent {
   @Input() selected: number = 0;
   @Input() menuItems: SkillMenuItem[] = [];
-  @Input() isMobile: boolean = false;
+  @Input() isMobile!: boolean;
   @Output() selectChanged = new EventEmitter<number>();
 
   selectValue(value?: number) {

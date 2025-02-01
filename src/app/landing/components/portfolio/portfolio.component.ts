@@ -52,9 +52,6 @@ export class PortfolioComponent {
     },
     nav: true,
   };
-  @Input() isDesktop!: boolean;
-  @Input() isTablet!: boolean;
-  @Input() isMobile!: boolean;
 
   openDemoPage() {
     window.open('https://www.google.pl', '_blank', 'noopener,noreferrer');

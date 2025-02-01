@@ -1,7 +1,7 @@
-<div class="contact">
+<div class="container contact">
   <div class="contact__header">
-    <h2>{{ "contact.title" | translate }}</h2>
-    <h3>{{ "contact.subtitle" | translate }}</h3>
+    <h2 class="title">{{ "contact.title" | translate }}</h2>
+    <h3 class="subtitle">{{ "contact.subtitle" | translate }}</h3>
   </div>
   <div class="contact__body">
     <div class="contact__left">
@@ -18,37 +18,11 @@
     <div class="contact__form">
       <form [formGroup]="form" (ngSubmit)="onSubmit()">
         <div class="contact__form-items">
-          <app-error controlName="firstName">
+          <app-error [controlName]="item.controlName" *ngFor="let item of formItems">
             <app-input
-              [label]="'Name'"
-              [control]="form.get('firstName')"
-              [type]="'text'"
-            >
-            </app-input>
-          </app-error>
-          <app-error controlName="lastName">
-            <app-input
-              [label]="'Last name'"
-              [control]="form.get('lastName')"
-              [type]="'text'"
-            >
-            </app-input>
-          </app-error>
-        </div>
-        <div class="contact__form-items">
-          <app-error controlName="email">
-            <app-input
-              [label]="'Email'"
-              [control]="form.get('email')"
-              [type]="'text'"
-            >
-            </app-input>
-          </app-error>
-          <app-error controlName="phone">
-            <app-input
-              [label]="'Phone number'"
-              [control]="form.get('phone')"
-              [type]="'number'"
+              [label]="item.label"
+              [control]="form.get(item.controlName)"
+              [type]="item.type"
             >
             </app-input>
           </app-error>

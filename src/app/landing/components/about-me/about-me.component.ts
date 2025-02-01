@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
-  Input,
   OnDestroy,
   OnInit,
 } from '@angular/core';
@@ -26,9 +25,6 @@ export class AboutMeComponent implements OnInit, OnDestroy {
   };
   countOptions: CountOption[] = countOptions;
   subscriptions = new Subscription();
-  @Input() isDesktop!: boolean;
-  @Input() isTablet!: boolean;
-  @Input() isMobile!: boolean;
 
   constructor(
     private languageService: LanguageService,

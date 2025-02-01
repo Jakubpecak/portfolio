@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Qualification } from '../../../core/models/qualification';
 import { qualifications } from '../../../core/utils/qualifications';
 
@@ -10,7 +10,4 @@ import { qualifications } from '../../../core/utils/qualifications';
 })
 export class QualificationsComponent {
   qualifications: Qualification[] = qualifications;
-  @Input() isDesktop!: boolean;
-  @Input() isTablet!: boolean;
-  @Input() isMobile!: boolean;
 }

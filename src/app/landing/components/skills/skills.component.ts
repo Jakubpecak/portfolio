@@ -13,7 +13,5 @@ export class SkillsComponent {
   selected: number = 0;
   skillList: Skill[] = skills;
   menuItems: SkillMenuItem[] = menuSkills;
-  @Input() isDesktop!: boolean;
-  @Input() isTablet!: boolean;
   @Input() isMobile!: boolean;
 }
