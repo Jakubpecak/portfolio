@@ -1,4 +1,4 @@
-@import "../../../../../styles/shared/mixins";
+@use "../../../../../styles/shared/mixins" as mixins;
 
 :host {
   width: 100%;
@@ -17,7 +17,7 @@
     border-right: 1px solid var(--error-color);
     border-left: 1px solid var(--error-color);
     border-bottom: 1px solid var(--error-color);
-    @include fade__in(0.5s);
+    @include mixins.fade__in(0.5s);
 
     &::before {
       content: "⚠️";

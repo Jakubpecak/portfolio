@@ -18,7 +18,10 @@
     <div class="contact__form">
       <form [formGroup]="form" (ngSubmit)="onSubmit()">
         <div class="contact__form-items">
-          <app-error [controlName]="item.controlName" *ngFor="let item of formItems">
+          <app-error
+            [controlName]="item.controlName"
+            *ngFor="let item of formItems"
+          >
             <app-input
               [label]="item.label"
               [control]="form.get(item.controlName)"
@@ -36,9 +39,19 @@
           </app-error>
         </div>
         <div class="contact__form-button">
-          <button type="submit" mat-raised-button color="primary">
+          <button
+            type="submit"
+            mat-raised-button
+            color="primary"
+            *ngIf="!(isLoading$ | async); else loading"
+          >
             {{ "button.submit" | translate }}
           </button>
+          <ng-template #loading>
+            <button mat-raised-button color="primary" [disabled]="true">
+              <i class="fa-solid fa-spinner fa-spin-pulse"></i>
+            </button>
+          </ng-template>
         </div>
       </form>
     </div>

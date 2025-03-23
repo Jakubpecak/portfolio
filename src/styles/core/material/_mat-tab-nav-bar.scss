@@ -1,4 +1,4 @@
-@import "../../shared/media-queries";
+@use "../../shared/media-queries" as mq;
 
 #nav .mat-mdc-tab-link-container {
   border-bottom-width: 0;
@@ -9,7 +9,7 @@
       font-size: 1.8rem;
       font-weight: 600;
       font-family: "Poppins", sans-serif;
-      @include mq("1000px") {
+      @include mq.mq("1000px") {
         font-size: 1.6rem;
       }
       &:hover {
@@ -18,10 +18,10 @@
     }
   }
   .mdc-tab {
-    @include mq("1015px") {
+    @include mq.mq("1015px") {
       padding: 0 10px;
     }
-    @include mq("850px") {
+    @include mq.mq("850px") {
       padding: 0 3px;
     }
   }

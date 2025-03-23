@@ -8,13 +8,13 @@ import { MenuItem } from '../../../core/models/menu-item';
   styleUrl: './navigation.component.scss',
 })
 export class NavigationComponent {
-  currentLanguage: string = 'en';
   activeLink = '';
   @Input() isDesktop!: boolean;
   @Input() isTablet!: boolean;
   @Input() isMobile!: boolean;
   @Input() menuList: MenuItem[] = [];
   @Input() languageList: LanguageItem[] = [];
+  @Input() currentLanguage!: string;
   @Output() languageChanged = new EventEmitter<string>();
 
   trackByMenu(index: number, item: MenuItem) {

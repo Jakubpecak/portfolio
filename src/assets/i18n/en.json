@@ -136,6 +136,9 @@
   "popup": {
     "location": "Location"
   },
+  "tooltip": {
+    "project": "The project is currently under development and not yet available."
+  },
   "errors": {
     "required-name": "Name is required.",
     "required-email": "Email is required.",
@@ -148,7 +151,7 @@
     "max-email": "Email too long.",
     "max-phone": "Phone is too long.",
     "max-description": "Max. 500 characters.",
-    "message-failed": "Error occurred, please try again later.",
+    "message-failed": "Sending messages is disabled for security reasons. I do not want my external API key to be publicly available.",
     "message-success": "Message was sent."
   },
   "page": {

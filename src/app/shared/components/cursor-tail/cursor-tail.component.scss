@@ -1,5 +1,5 @@
-@import "../../../../styles/shared/mixins";
-@import "../../../../styles/shared/media-queries";
+@use "../../../../styles/shared/mixins" as mixins;
+@use "../../../../styles/shared/media-queries" as mq;
 
 .cursor-trail {
   position: fixed;
@@ -10,7 +10,7 @@
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 10000;
-  @include fade__out();
+  @include mixins.fade__out();
 }
 
 .fa-computer-mouse {
@@ -20,7 +20,7 @@
   font-size: 4rem;
   color: var(--secondary-color);
   z-index: 999;
-  @include sm {
+  @include mq.sm {
     top: 8rem;
   }
   &:hover {

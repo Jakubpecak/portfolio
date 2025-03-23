@@ -148,11 +148,14 @@
     "max-email": "Email jest za długi.",
     "max-phone": "Telefon jest za długi.",
     "max-description": "Maksymalnie 500 znaków.",
-    "message-failed": "Wystąpił błąd, spróbuj ponownie później.",
+    "message-failed": "Wysyłanie wiadomości jest wyłączone ze względów bezpieczeństwa. Nie chcę, aby mój zewnętrzny klucz API byl publicznie udostępniany.",
     "message-success": "Wiadomość została wysłana."
   },
   "page": {
     "not-found": "Strona nie została znaleziona"
+  },
+  "tooltip": {
+    "project": "Projekt jest obecnie w trakcie realizacji i nie jest jeszcze dostępny."
   },
   "validation": {
     "username-required": "Nazwa użytkownika jest wymagana",

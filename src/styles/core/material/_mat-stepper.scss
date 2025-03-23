@@ -1,4 +1,4 @@
-@import "../../shared/media-queries";
+@use "../../shared/media-queries" as mq;
 
 #qualification {
   mat-tab-body {
@@ -15,7 +15,7 @@
     font-size: 2rem;
     color: var(--primary-color);
     font-family: "Poppins", sans-serif;
-    @include sm {
+    @include mq.sm {
       font-size: 1.8rem;
     }
   }
@@ -25,7 +25,7 @@
     width: 35px;
     height: 35px;
     margin-right: 2.5rem;
-    @include sm {
+    @include mq.sm {
       width: 30px;
       height: 30px;
     }

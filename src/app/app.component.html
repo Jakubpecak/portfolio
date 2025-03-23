@@ -7,6 +7,7 @@
   [isMobile]="isMobile"
   [menuList]="menuList"
   [languageList]="languageList"
+  [currentLanguage]="currentLanguage"
 ></app-navigation>
 <app-bottom-navigation
   *ngIf="isMobile && !isLoading"
@@ -14,6 +15,7 @@
   [menuList]="menuList"
   [languageList]="languageList"
   [isAtBottom]="isAtBottom"
+  [currentLanguage]="currentLanguage"
 ></app-bottom-navigation>
 <router-outlet></router-outlet>
 <app-footer

@@ -1,15 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Message } from '../models/message';
+import { UserMessage } from '../models/message';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ContactService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
-
-  sendMessage(form: Message) {
-    return this.http.post<Message>('contact', form);
+  sendMessage(form: UserMessage) {
+    return this.http.post('contact', form);
   }
 }

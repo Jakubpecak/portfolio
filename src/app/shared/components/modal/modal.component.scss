@@ -1,4 +1,4 @@
-@import "../../../../styles/shared/media-queries";
+@use "../../../../styles/shared/media-queries" as mq;
 
 :host {
   .dialog {
@@ -8,7 +8,7 @@
     height: auto;
     overflow: hidden;
     background-color: #fff;
-    @include sm {
+    @include mq.sm {
       min-width: 350px;
     }
     h1 {
@@ -19,7 +19,7 @@
       color: var(--secondary-color);
       font-weight: 600;
       font-family: "Poppins", sans-serif;
-      @include sm {
+      @include mq.sm {
         font-size: 2.4rem;
       }
     }
@@ -35,7 +35,7 @@
       cursor: pointer;
       z-index: 10;
       color: var(--primary-color);
-      @include sm {
+      @include mq.sm {
         top: 0.5rem;
         right: 0.5rem;
       }

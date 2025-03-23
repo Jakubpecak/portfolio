@@ -26,10 +26,10 @@
     role="button"
     aria-label="Open palette panel"
   ></i>
-  <mat-menu #menu="matMenu">
-    <div class="colors">
+  <mat-menu #menu="matMenu" panelClass="colors">
+    <div class="colors__menu">
       <span
-        class="colors--item"
+        class="colors__menu--item"
         mat-menu-item
         (click)="changeTheme(item.color)"
         *ngFor="let item of colorPalette"

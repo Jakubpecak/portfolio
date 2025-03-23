@@ -10,10 +10,10 @@ import { MobileNavListComponent } from './mobile-nav-list/mobile-nav-list.compon
   styleUrl: './bottom-navigation.component.scss',
 })
 export class BottomNavigationComponent {
-  currentLanguage: string = 'en';
   @Input() menuList: MenuItem[] = [];
   @Input() languageList: LanguageItem[] = [];
   @Input() isAtBottom: boolean = false;
+  @Input() currentLanguage!: string;
   @Output() languageChanged = new EventEmitter<string>();
 
   constructor(private bottomSheet: MatBottomSheet) {}

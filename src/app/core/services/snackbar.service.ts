@@ -13,7 +13,7 @@ export class SnackbarService {
 
   open(message: string, type: 'warn' | 'success' | 'info' = 'info'): void {
     this.snackBar.open(this.translate.instant(message), '', {
-      duration: 4000,
+      duration: 5000,
       horizontalPosition: 'left',
       verticalPosition: 'bottom',
       panelClass: [`snackbar-${type}`],

@@ -13,6 +13,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { CountUpModule } from 'ngx-countup';
@@ -68,6 +69,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     MatListModule,
     MatSnackBarModule,
     NgOptimizedImage,
+    MatTooltipModule,
   ],
   exports: [
     FormsModule,
@@ -98,6 +100,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     MatListModule,
     MatSnackBarModule,
     NgOptimizedImage,
+    MatTooltipModule,
   ],
 })
 export class SharedModule {}

@@ -1,4 +1,4 @@
-@import "../../../../styles/shared/media-queries";
+@use "../../../../styles/shared/media-queries" as mq;
 
 :host {
   .portfolio {
@@ -10,16 +10,16 @@
       width: 100%;
       justify-content: center;
       gap: 5rem;
-      @include mq("1050px") {
+      @include mq.mq("1050px") {
         flex-wrap: wrap;
       }
-      @include mq("950px") {
+      @include mq.mq("950px") {
         gap: 2rem;
       }
     }
     &__left {
       width: 50%;
-      @include mq("1050px") {
+      @include mq.mq("1050px") {
         width: 100%;
       }
       owl-carousel-o {
@@ -27,7 +27,7 @@
         height: 400px;
         max-width: 600px;
         margin: auto;
-        @include sm {
+        @include mq.sm {
           height: 300px;
         }
       }
@@ -46,17 +46,17 @@
         border-radius: 1rem;
         object-fit: cover;
         object-position: center;
-        @include mq("1050px") {
+        @include mq.mq("1050px") {
           height: 350px;
         }
-        @include sm {
+        @include mq.sm {
           height: 250px;
         }
       }
     }
     &__right {
       width: 50%;
-      @include mq("1050px") {
+      @include mq.mq("1050px") {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -65,7 +65,7 @@
         max-width: 750px;
         justify-content: center;
         gap: 3rem;
-        @include mq("1050px") {
+        @include mq.mq("1050px") {
           max-width: 600px;
         }
         h3,
@@ -75,13 +75,13 @@
       }
     }
     &__button-box {
-      @include mq("950px") {
+      @include mq.mq("950px") {
         display: flex;
         justify-content: center;
       }
       a,
       button {
-        @include sm {
+        @include mq.sm {
           width: 100%;
         }
       }

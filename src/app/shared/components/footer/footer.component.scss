@@ -1,4 +1,4 @@
-@import "../../../../styles/shared/media-queries";
+@use "../../../../styles/shared/media-queries" as mq;
 
 :host {
   .footer {
@@ -6,7 +6,7 @@
     background-color: var(--primary-bgc-color);
     display: flex;
     justify-content: space-between;
-    @include lg {
+    @include mq.lg {
       padding: 5rem 2rem 2rem 2rem;
     }
     &__header {

@@ -1,5 +1,5 @@
-@import "../../../../../styles/shared/mixins";
-@import "../../../../../styles/shared/media-queries";
+@use "../../../../../styles/shared/mixins" as mixins;
+@use "../../../../../styles/shared/media-queries" as mq;
 
 :host {
   display: flex;
@@ -10,11 +10,11 @@
     position: relative;
     width: 400px;
     height: 400px;
-    @include sm {
+    @include mq.sm {
       width: 270px;
       height: 270px;
     }
-    @include rotate__menu(15s);
+    @include mixins.rotate__menu(15s);
     &:hover {
       animation-play-state: paused;
     }
@@ -32,14 +32,14 @@
       height: 80px;
       margin: -40px;
       opacity: 0;
-      @include sm {
+      @include mq.sm {
         width: 60px;
         height: 60px;
         margin: -30px;
       }
       &:nth-child(1) {
         transform: rotate(0deg) translate(140px) rotate(0deg);
-        @include sm {
+        @include mq.sm {
           transform: rotate(0deg) translate(100px) rotate(0deg);
         }
         i {
@@ -49,7 +49,7 @@
 
       &:nth-child(2) {
         transform: rotate(60deg) translate(140px) rotate(-60deg);
-        @include sm {
+        @include mq.sm {
           transform: rotate(60deg) translate(100px) rotate(-60deg);
         }
         i {
@@ -59,7 +59,7 @@
 
       &:nth-child(3) {
         transform: rotate(120deg) translate(140px) rotate(-120deg);
-        @include sm {
+        @include mq.sm {
           transform: rotate(120deg) translate(100px) rotate(-120deg);
         }
         i {
@@ -69,7 +69,7 @@
 
       &:nth-child(4) {
         transform: rotate(180deg) translate(140px) rotate(-180deg);
-        @include sm {
+        @include mq.sm {
           transform: rotate(180deg) translate(100px) rotate(-180deg);
         }
         i {
@@ -79,7 +79,7 @@
 
       &:nth-child(5) {
         transform: rotate(240deg) translate(140px) rotate(-240deg);
-        @include sm {
+        @include mq.sm {
           transform: rotate(240deg) translate(100px) rotate(-240deg);
         }
         i {
@@ -89,7 +89,7 @@
 
       &:nth-child(6) {
         transform: rotate(300deg) translate(140px) rotate(-300deg);
-        @include sm {
+        @include mq.sm {
           transform: rotate(300deg) translate(100px) rotate(-300deg);
         }
         i {
@@ -109,7 +109,7 @@
         color: #000;
         opacity: 0.8;
         cursor: pointer;
-        @include sm {
+        @include mq.sm {
           font-size: 3rem;
           line-height: 6rem;
         }
@@ -132,7 +132,7 @@
     width: 170px;
     height: 170px;
     transform: translate(-50%, -50%);
-    @include sm {
+    @include mq.sm {
       width: 140px;
       height: 140px;
     }

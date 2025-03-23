@@ -16,7 +16,7 @@
 
 #contact .mat-mdc-raised-button[disabled],
 .mat-mdc-raised-button.mat-mdc-button-disabled {
-  background-color: var(--secondary-color) !important;
+  background-color: var(--secondary-color);
   opacity: 0.5;
   .mdc-button__label {
     font-size: 1.8rem;

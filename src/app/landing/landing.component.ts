@@ -1,8 +1,11 @@
+import { isPlatformBrowser } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
+  Inject,
   OnDestroy,
   OnInit,
+  PLATFORM_ID,
 } from '@angular/core';
 import { Subscription } from 'rxjs/internal/Subscription';
 import { ResponsiveService } from '../core/services/responsive.service';
@@ -21,13 +24,27 @@ export class LandingComponent implements OnInit, OnDestroy {
   isMobile: boolean = false;
   subscriptions = new Subscription();
 
-  constructor(private responsiveService: ResponsiveService) {}
+  constructor(
+    private responsiveService: ResponsiveService,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {}
 
   ngOnInit(): void {
     this.responsiveObserver();
+    this.applyColorFromLocalStorage();
+  }
+
+  applyColorFromLocalStorage() {
+    if (isPlatformBrowser(this.platformId)) {
+      const color = localStorage.getItem('color');
+      if (color) {
+        document.documentElement.style.setProperty('--secondary-color', color);
+      }
+    }
   }
 
   changeTheme(color: string) {
+    localStorage.setItem('color', color);
     document.documentElement.style.setProperty('--secondary-color', color);
   }
 

@@ -1,17 +1,17 @@
-@import "../../../../styles/shared/media-queries";
+@use "../../../../styles/shared/media-queries" as mq;
 
 :host {
   .about {
     &__body {
       display: flex;
-      @include mq("1000px") {
+      @include mq.mq("1000px") {
         flex-wrap: wrap;
         justify-content: center;
       }
     }
     &__picture {
       width: 50%;
-      @include mq("1000px") {
+      @include mq.mq("1000px") {
         width: 100%;
       }
       img {
@@ -27,7 +27,7 @@
       flex-direction: column;
       justify-content: center;
       max-width: 750px;
-      @include mq("1000px") {
+      @include mq.mq("1000px") {
         width: 100%;
         max-width: 600px;
       }
@@ -40,7 +40,7 @@
       display: flex;
       justify-content: center;
       gap: 2rem;
-      @include sm {
+      @include mq.sm {
         gap: 1rem;
       }
     }
@@ -50,7 +50,7 @@
         font-size: 4.5rem;
         font-weight: bold;
         color: var(--secondary-color);
-        @include sm {
+        @include mq.sm {
           font-size: 3.5rem;
           padding-bottom: 1rem;
         }
@@ -60,17 +60,17 @@
       display: flex;
       justify-content: center;
       button {
-        @include sm {
+        @include mq.sm {
           width: 100%;
         }
         &:hover {
           i {
             transform: rotate(0deg);
-            transition: 0.3s all;
           }
         }
         i {
           transform: rotate(-90deg);
+          transition: transform 0.3s ease;
         }
       }
     }

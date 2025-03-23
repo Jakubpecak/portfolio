@@ -1,6 +1,5 @@
 import {
   ChangeDetectionStrategy,
-  ChangeDetectorRef,
   Component,
   OnDestroy,
   OnInit,
@@ -17,7 +16,7 @@ import { countOptions } from '../../../core/utils/count-options';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AboutMeComponent implements OnInit, OnDestroy {
-  currentLanguage: string = 'en';
+  currentLanguage!: string;
   countUpOptions = {
     prefix: '+',
     enableScrollSpy: true,
@@ -26,16 +25,12 @@ export class AboutMeComponent implements OnInit, OnDestroy {
   countOptions: CountOption[] = countOptions;
   subscriptions = new Subscription();
 
-  constructor(
-    private languageService: LanguageService,
-    private cdr: ChangeDetectorRef
-  ) {}
+  constructor(private languageService: LanguageService) {}
 
   ngOnInit(): void {
     this.subscriptions.add(
-      this.languageService.language$.subscribe((language) => {
-        this.currentLanguage = language;
-        this.cdr.markForCheck();
+      this.languageService.language$.subscribe(() => {
+        this.currentLanguage = this.languageService.getCurrentLanguage();
       })
     );
   }

@@ -1,16 +1,16 @@
-@import "../../../../../styles/shared/media-queries";
+@use "../../../../../styles/shared/media-queries" as mq;
 
 :host {
   .content {
     max-width: 750px;
-    @include mq("950px") {
+    @include mq.mq("950px") {
       max-width: 100%;
       display: flex;
       justify-content: center;
     }
     &__header {
       padding-bottom: 2rem;
-      @include sm {
+      @include mq.sm {
         padding-top: 3rem;
       }
       h3 {

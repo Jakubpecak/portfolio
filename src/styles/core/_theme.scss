@@ -1,4 +1,4 @@
-@import "../shared/media-queries";
+@use "../shared/media-queries" as mq;
 
 :root {
   --primary-color: #000;
@@ -86,17 +86,17 @@ textarea {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.container  {
+.container {
   padding: 12rem 10rem;
   max-width: 1920px;
   margin: 0 auto;
-  @include lg {
+  @include mq.lg {
     padding: 12rem 5rem;
   }
-  @include mq("950px") {
+  @include mq.mq("950px") {
     padding: 5rem;
   }
-  @include sm {
+  @include mq.sm {
     padding: 5rem 2rem;
   }
 }
@@ -109,7 +109,7 @@ textarea {
   text-align: center;
   color: var(--secondary-color);
   padding-bottom: 5rem;
-  @include mq("950px") {
+  @include mq.mq("950px") {
     padding-bottom: 2rem;
   }
 }

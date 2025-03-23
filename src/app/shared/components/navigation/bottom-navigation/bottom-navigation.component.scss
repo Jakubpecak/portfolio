@@ -1,4 +1,4 @@
-@import "../../../../../styles/shared/media-queries";
+@use "../../../../../styles/shared/media-queries" as mq;
 
 :host {
   #nav {

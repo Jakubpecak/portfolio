@@ -30,8 +30,14 @@
             </li>
           </ul>
           <div class="portfolio__button-box">
-            <button mat-raised-button color="primary" (click)="openDemoPage()">
+            <button
+              mat-raised-button
+              color="primary"
+              [matTooltip]="'tooltip.project' | translate"
+              [matTooltipClass]="'tooltip'"
+            >
               {{ "portfolio.demo" | translate }}
+              <i class="fa-solid fa-lock"></i>
             </button>
           </div>
         </div>

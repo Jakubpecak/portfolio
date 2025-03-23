@@ -36,6 +36,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
   isAtBottom: boolean = false;
   menuList: MenuItem[] = menu;
   languageList = languages;
+  currentLanguage!: string;
   private observer!: IntersectionObserver;
   subscriptions = new Subscription();
   @ViewChild('bottomMarker', { static: true, read: ElementRef })
@@ -52,7 +53,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
 
   ngOnInit(): void {
     this.responsiveObserver();
-    this.setDefaultLanguage();
+    this.getCurrentLanguage();
   }
 
   ngAfterViewInit(): void {
@@ -67,8 +68,9 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
     }
   }
 
-  setDefaultLanguage() {
-    this.translate.use('en');
+  getCurrentLanguage() {
+    this.currentLanguage = this.languageService.getCurrentLanguage();
+    this.translate.use(this.currentLanguage);
   }
 
   changeLanguage(language: string) {

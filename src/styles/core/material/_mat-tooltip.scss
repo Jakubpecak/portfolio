@@ -1,0 +1,10 @@
+.tooltip {
+  .mat-mdc-tooltip-surface {
+    color: var(--primary-bgc-color);
+    background-color: var(--primary-color);
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    padding: 1rem;
+    line-height: 1.5rem;
+  }
+}

@@ -1,4 +1,4 @@
-@import "../../../../styles/shared/media-queries";
+@use "../../../../styles/shared/media-queries" as mq;
 
 :host {
   #nav {
@@ -9,7 +9,7 @@
     position: fixed;
     background-color: var(--primary-bgc-color);
     z-index: 100;
-    @include lg {
+    @include mq.lg {
       padding: 1.5rem 2rem;
     }
   }
@@ -22,14 +22,14 @@
       font-weight: 700;
       cursor: pointer;
       color: var(--secondary-color);
-      @include mq("1000px") {
+      @include mq.mq("1000px") {
         font-size: 2.5rem;
       }
     }
     &__flags {
       display: flex;
       gap: 2rem;
-      @include mq("1000px") {
+      @include mq.mq("1000px") {
         gap: 1rem;
       }
       img {
@@ -38,7 +38,7 @@
         border-radius: 50%;
         border: 1px solid lightgray;
         cursor: pointer;
-        @include mq("1000px") {
+        @include mq.mq("1000px") {
           width: 35px;
           height: 35px;
         }

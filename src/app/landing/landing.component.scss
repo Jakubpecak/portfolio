@@ -1,10 +1,10 @@
-@import "../../styles/shared/mixins";
-@import "../../styles/shared/media-queries";
+@use "../../styles/shared/mixins" as mixins;
+@use "../../styles/shared/media-queries" as mq;
 
 :host {
   .main-container {
     padding: 7.8rem 0 0 0;
-    @include sm {
+    @include mq.sm {
       padding: 0;
     }
     .fa-gear {
@@ -14,8 +14,8 @@
       font-size: 4rem;
       color: var(--secondary-color);
       z-index: 999;
-      @include rotate__menu(5s);
-      @include sm {
+      @include mixins.rotate__menu(5s);
+      @include mq.sm {
         top: 2rem;
       }
       &:hover {

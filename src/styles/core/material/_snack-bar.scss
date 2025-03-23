@@ -1,4 +1,4 @@
-@import "../../shared/media-queries";
+@use "../../shared/media-queries" as mq;
 
 .snackbar-warn,
 .snackbar-success {
@@ -6,8 +6,9 @@
     .mat-mdc-snack-bar-label {
       font-family: "Poppins", sans-serif;
       font-size: 1.8rem;
+      line-height: 1.8rem;
       color: var(--primary-bgc-color);
-      @include sm {
+      @include mq.sm {
         font-size: 1.6rem;
         text-align: center;
       }
