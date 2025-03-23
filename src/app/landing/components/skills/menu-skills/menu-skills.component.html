@@ -7,7 +7,7 @@
       [ngClass]="item.value === selected ? 'selected' : ''"
     >
       <ng-container *ngIf="isMobile; else desktopIcon">
-        <a href="#skills" [attr.aria-label]="item.label">
+        <a href="#skills-header" [attr.aria-label]="item.label">
           <i [class]="item.name"></i>
         </a>
       </ng-container>
